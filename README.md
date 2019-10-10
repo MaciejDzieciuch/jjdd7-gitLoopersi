@@ -54,6 +54,21 @@ The current day is also marked on the calendar and it is also possible to enlarg
 ![Email scheduler](./docs/emailScheduler.png)
 > In the background of our application there is a scheduler that sends an e-mail with a list of reported leaves to the administrator if there are reported leaves that are older than 15 minutes.
 
+### Holiday defining
+![Holiday defining-browser](./docs/vacationDefiningBrowser.png)
+![Holiday defining-add](./docs/vacationDefiningAdd.png)
+> Both a guest and an logged in employee has an access to list of holidays. It is available as a holiday browser which let search holiday either by range of dates or beginning of name (livesearch using AJAX). Additional functionalities have been implemented in admin panel. Administrators have opportunity to add, edit and delete holiday. These activities aren’t temporary, all of them edit records in database. During adding a holiday data typed by administrator such like date, name, type of holiday are validated both on front-end side (by html validation options) and backend side (filters).
+
+### Statistics
+![Statisitics](./docs/statistics.png)
+> Another option available to administrator is access to statistics module where vacation’s data are presented. There are four charts:
+* Months Vacation Rank - a presentation which months are the most popular for vacation
+* Employee Vacation Rank - a presentation which employees have taken the most vacations
+* Accepted/Refused Vacations - a presentation of a ratio between accepted and refused vacations
+* Team Vacation Rank - a presentation which teams have taken the most vacations.
+> Statistics are generated from database and present current data (effect reached by AJAX).
+
+
 ### Loggers
 > Every operation that is being made on the backend is logged to server logs or to external file - depending on the logger level.
 
@@ -76,6 +91,7 @@ The current day is also marked on the calendar and it is also possible to enlarg
 * Bootstrap 4.3.1
 * HTML5, CSS3, JS
 * jQuery, AJAX
+* Google Charts
 
 ## Status
 Project is: _finished_.
